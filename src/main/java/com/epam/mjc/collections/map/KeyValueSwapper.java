@@ -13,6 +13,10 @@ public class KeyValueSwapper {
             resultMap.put(m.getValue(), m.getKey());
         }
 
+        for (Map.Entry<String, Integer> m : resultMap.entrySet()) {
+            System.out.println(m.getKey() + " " + m.getValue());
+        }
+
         return resultMap;
     }
 }
